@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
-    <!-- <meta name="viewport" content="width=1024" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
@@ -23,11 +25,13 @@
       <div id="header-right">
         <div id="uls">
           <ul>
-            <li><a class="header-right-link" href="#intro">Home</a></li>
+            <li><a class="header-right-link" href="/">Home</a></li>
             <li><a class="header-right-link" href="#skills">Skills</a></li>
             <li><a class="header-right-link" href="#projects">Project</a></li>
             <li><a class="header-right-link" href="#about">About me</a></li>
-            <li><a class="header-right-link" href="#">Contact me</a></li>
+            <li>
+              <a class="header-right-link" href="/contact.html">Contact me</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,8 +47,14 @@
             <div id="intro-desc3">Developer</div>
           </div>
           <div id="btn-grp">
-            <a class="btn">Resume</a>
-            <a class="btn">Contact Me</a>
+            <a
+              class="btn"
+              href="https://drive.google.com/file/d/1k09_SaAbLneaKEeYsTYUq_HH2prOkTz9/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+            <a href="/contact.html" class="btn">Contact Me</a>
           </div>
         </div>
       </section>
@@ -97,6 +107,28 @@
         <div id="project-header">PROJECTS</div>
         <div id="project-container">
           <div class="project">
+            <img src="/tic-tac-toe.jpeg" alt="Tic Tac Toe" />
+            <div class="projectTitle">Tic Tac Toe</div>
+            <div class="projectDesc">This is tic-tac-toe game.</div>
+            <div class="projectTech">
+              Created using HTML, CSS, and JavaScript.
+            </div>
+            <div class="btns">
+              <a
+                href="http://tic-tac-toe-mk.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="btn live">View Live</div></a
+              >
+              <a
+                href="https://github.com/mkamra2000/Tic-Tac-Toe/tree/master/Tic%20Tac%20Toe"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="btn source">Source Code</div></a
+              >
+            </div>
+          </div>
+          <div class="project">
             <img src="/News App.jpg" alt="News App" />
             <div class="projectTitle">Newzly App</div>
             <div class="projectDesc">
@@ -104,8 +136,18 @@
             </div>
             <div class="projectTech">Created using Java.</div>
             <div class="btns">
-              <a href="https://github.com/mkamra2000/Newzly" target="_blank" rel="noopener noreferrer"><div class="btn live">View Live</div></a>
-              <a href="https://github.com/mkamra2000/Newzly" target="_blank" rel="noopener noreferrer"><div class="btn source">Source Code</div></a>
+              <a
+                href="https://github.com/mkamra2000/Newzly"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="btn live">View Live</div></a
+              >
+              <a
+                href="https://github.com/mkamra2000/Newzly"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="btn source">Source Code</div></a
+              >
             </div>
           </div>
           <div class="project">
@@ -141,18 +183,15 @@
             </div>
             <div class="projectTech">Created using HTML, CSS</div>
             <div class="btns">
+              <a href="/" target="_blank" rel="noopener noreferrer"
+                ><div class="btn live">View Live</div></a
+              >
               <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><div class="btn live">View Live</div></a
-            >
-            <a
-              href="https://github.com/mkamra2000/Portfolio-Website"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><div class="btn source">Source Code</div></a
-            >
+                href="https://github.com/mkamra2000/Portfolio-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="btn source">Source Code</div></a
+              >
             </div>
           </div>
         </div>
@@ -244,7 +283,10 @@
             >Mayank Kamra</a
           >
         </div>
-        <div id="footerDiv" style="display: flex; font-family: var(--introHeader)">
+        <div
+          id="footerDiv"
+          style="display: flex; font-family: var(--introHeader)"
+        >
           <div>Copyright &copy; 2022 - 2023</div>
           <span id="footerSpan">&nbsp;|&nbsp;</span>
           <div>All Rights Reserved</div>

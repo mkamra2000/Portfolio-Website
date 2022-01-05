@@ -8,6 +8,9 @@
   --introHeader: "Hind", sans-serif;
   --introDesc: "Dancing Script", cursive;
 }
+::selection{
+  background-color: var(--light);
+}
 body {
   margin: 0;
   padding: 0;

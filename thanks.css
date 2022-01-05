@@ -1,0 +1,31 @@
+body{
+    overflow: hidden;
+}
+#thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Coding\ Bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+#thanksHeader{
+    font-size: 50px;
+    font-family: var(--headerText);
+}
+#thanksDesc{
+    font-size: 50px;
+    font-family: var(--headerText);
+}
+@media only screen and (max-width:600px){
+    #thanksHeader{
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    #thanksDesc{
+        font-size: 30px;
+        margin-bottom: 7px;
+    }   
+}
