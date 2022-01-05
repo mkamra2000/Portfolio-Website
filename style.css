@@ -471,18 +471,36 @@ a {
   }
 }
 
+@media only screen and (max-width: 580px){
+  #about{
+    width: 69%;
+  }
+  #footer{
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 550px){
   #about{
-    width: 54%;
+    width: 66%;
   }
   #skills{
     width: 120%;
   }
   #project-container{
-    margin-right: 234px;
+    width: 96%;
   }
   #footer{
-    width: 47%;
+    width: 64%;
+  }
+}
+
+@media only screen and (max-width: 530px){
+  #about{
+    width: 63%;
+  }
+  #footer{
+    width: 59%;
   }
 }
 
