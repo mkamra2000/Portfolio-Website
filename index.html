@@ -7,16 +7,30 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <meta
+      name="description"
+      content="Mayank Kamra . Personal Portfolio Website . This personal portfolio website describes me such as my project, my skills, and little about me."
+    />
+    <link
+      rel="shortcut icon"
+      href="/Favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="/Favicon/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="shortcut icon" href="/Favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script src="/JavaScript/index.js"></script>
     <title>Mayank Kamra</title>
   </head>
   <body>
-    <nav id="header">
+    <header id="header">
       <div id="header-left">
         <a href="/"> Mayank Kamra</a>
-        <div id="hg" onclick="hello()">
+        <div id="hg" onclick="hgClick()">
           <div class="line line1"></div>
           <div class="line line1"></div>
           <div class="line line1"></div>
@@ -30,15 +44,16 @@
             <li><a class="header-right-link" href="#projects">Project</a></li>
             <li><a class="header-right-link" href="#about">About me</a></li>
             <li>
-              <a class="header-right-link" href="/contact.html">Contact me</a>
+              <a class="header-right-link" href="/html/contact.html"
+                >Contact me</a
+              >
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
     <div id="container">
       <section id="intro">
-        <img src="Coding Bg.jpg" alt="Coding Background" />
         <div id="intro-text">
           <div id="intro-name">MAYANK KAMRA</div>
           <div id="intro-desc">
@@ -54,7 +69,7 @@
               rel="noopener noreferrer"
               >Resume</a
             >
-            <a href="/contact.html" class="btn">Contact Me</a>
+            <a href="/html/contact.html" class="btn">Contact Me</a>
           </div>
         </div>
       </section>
@@ -107,7 +122,7 @@
         <div id="project-header">PROJECTS</div>
         <div id="project-container">
           <div class="project">
-            <img src="/tic-tac-toe.jpeg" alt="Tic Tac Toe" />
+            <img src="/Images/Tic-Tac-Toe.jpeg" alt="Tic Tac Toe" />
             <div class="projectTitle">Tic Tac Toe</div>
             <div class="projectDesc">This is tic-tac-toe game.</div>
             <div class="projectTech">
@@ -129,7 +144,7 @@
             </div>
           </div>
           <div class="project">
-            <img src="/News App.jpg" alt="News App" />
+            <img src="/Images/News App.jpg" alt="News App" />
             <div class="projectTitle">Newzly App</div>
             <div class="projectDesc">
               This is an android app that shows latest news.
@@ -151,7 +166,7 @@
             </div>
           </div>
           <div class="project">
-            <img src="/Quiz App.jpg" alt="Quiz App" />
+            <img src="/Images/Quiz App.jpg" alt="Quiz App" />
             <div class="projectTitle">Quiz App</div>
             <div class="projectDesc">
               This is quiz Website useful for practising questions based on
@@ -176,7 +191,7 @@
             </div>
           </div>
           <div class="project">
-            <img src="/Portfolio.jpeg" alt="Portfolio Website" />
+            <img src="/Images/Portfolio.jpeg" alt="Portfolio Website" />
             <div class="projectTitle">Portfolio Website</div>
             <div class="projectDesc">
               Personal Portfolio Website(Mayank Kamra)
@@ -201,7 +216,7 @@
         <div id="about-section">
           <div id="about-img">
             <img
-              src="/MKP.jpg"
+              src="/Images/MKP.jpg"
               alt="Mayank Kamra"
               width="400px"
               height="400px"

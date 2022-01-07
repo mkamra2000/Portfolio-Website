@@ -1,4 +1,4 @@
-function hello() {
+function hgClick() {
   if (document.getElementById("uls").style.display === "none") {
     document.getElementById("uls").style.display = "block";
     window.addEventListener("click", function (e) {
