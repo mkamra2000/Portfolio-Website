@@ -1,0 +1,2 @@
+/home  /
+/contact  /html/contact.html
