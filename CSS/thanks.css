@@ -8,24 +8,10 @@ body{
     align-items: center;
     background-image: url("/Images/Coding\ Bg\ Dark.jpeg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     color: white;
 }
-#thanksHeader{
-    font-size: 50px;
+#thanksHeader,#thanksDesc{
     font-family: var(--headerText);
-}
-#thanksDesc{
-    font-size: 50px;
-    font-family: var(--headerText);
-}
-@media only screen and (max-width:600px){
-    #thanksHeader{
-        font-size: 20px;
-        margin-bottom: 7px;
-    }
-    #thanksDesc{
-        font-size: 30px;
-        margin-bottom: 7px;
-    }   
 }

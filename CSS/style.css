@@ -4,6 +4,7 @@
   --dark: #070028;
   --light: #0046ffad;
   --white: aliceblue;
+  --borderColor: #0d1f4ed5;
   --headerText: "Merriweather", serif;
   --introHeader: "Hind", sans-serif;
   --introDesc: "Dancing Script", cursive;
@@ -26,78 +27,39 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0044ffad;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-a {
-  text-decoration: none;
-  color: var(--white);
-  transition: color 0.25s ease-in-out;
-}
-h1,
-h2 {
-  line-height: 1;
-  margin: auto;
-  padding-top: 25px;
-}
-#header {
-  display: flex;
-  justify-content: space-between;
+header {
   background-color: var(--dark);
-  padding: 12px;
+  color: var(--white);
   font-family: var(--headerText);
-  position: sticky;
-  top: 0;
-  z-index: 12;
 }
-#header-left {
-  display: flex;
-  align-items: center;
-  font-size: x-large;
+.line {
+  height: 3px;
+  background-color: var(--darker);
 }
-#header-left a:hover {
-  cursor: pointer;
-  color: var(--light);
+.line1 {
+  margin-top: 4px;
+  background-color: var(--white);
 }
-#header-right {
-  display: inline;
-  padding-right: 12px;
-}
-#header-right ul {
-  display: flex;
-  list-style: none;
-}
-#header-right li {
-  margin: 0px 12px;
-  font-size: larger;
-}
-.header-right-link:hover {
-  cursor: pointer;
+#uls li a:hover {
   color: var(--light);
 }
 #intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url("/Images/Coding\ Bg\ Dark.jpeg");
-  background-position: left;
-  background-size: cover;
-  height: 100vh;
+  background-position: center;
   background-repeat: no-repeat;
-}
-#intro-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-size: cover;
   color: var(--white);
-  font-family: var(--introHeader);
 }
 #intro-name {
-  margin-bottom: 25px;
-  font-size: 85px;
+  font-family: var(--introHeader);
   font-style: italic;
   transition: color 0.25s ease-in-out;
 }
@@ -105,22 +67,14 @@ h2 {
   color: var(--light);
 }
 #intro-desc {
-  display: flex;
   font-family: var(--introDesc);
-  font-size: 50px;
-}
-#btn-grp {
-  margin-top: 42px;
 }
 .btn {
-  margin-left: 20px;
-  font-size: 20px;
-  padding: 8px;
   color: var(--dark);
   background-color: var(--white);
-  border: 4px solid #0d1f4ed5;
-  border-radius: 15px;
   font-family: var(--headerText);
+  border: 4px solid var(--borderColor);
+  border-radius: 15px;
   transition: color 0.25s ease-in-out, background-color 0.45s ease-in-out;
   cursor: pointer;
 }
@@ -128,399 +82,75 @@ h2 {
   background-color: var(--dark);
   color: var(--white);
 }
-#skills {
+#skills,
+#about,
+#tech,
+#projects,
+#footer {
   background-color: var(--dark);
-  height: fit-content;
-}
-#skills-header {
-  padding: 12px;
   color: var(--white);
   font-family: var(--introHeader);
-  font-size: 40px;
 }
-.skill-desc {
-  margin-bottom: 45px;
-  color: var(--white);
-}
-.progress-bar {
-  margin-top: 12px;
-  height: 20px;
-  background-color: var(--white);
-  border-radius: 10px;
-}
-.progress {
-  background-color: var(--light);
-  height: 20px;
-  border-radius: 10px;
-}
-#skills-col {
-  margin-left: 25px;
-  margin-right: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-.skill-left {
-  width: 40%;
-}
-.skill-desc-header {
-  margin-left: 8px;
-  font-size: 25px;
+#about-section {
   font-family: var(--headerText);
 }
-#projects {
-  background-color: var(--dark);
-  color: var(--white);
+#about-image img {
+  border: 5px solid #273863d5;
+  border-radius: 20px;
 }
-.project {
-  max-width: 100%;
+.skillLine {
+  background-color: var(--white);
 }
-.project:hover {
-  transform: scale3D(1.05, 1.05, 0.1);
-  transition: transform 0.18s ease-in-out;
+.skillProgress1,
+.skillProgress2 {
+  background-color: var(--light);
+  margin: -2px;
 }
-#project-header {
-  padding: 12px;
-  color: var(--white);
-  font-family: var(--introHeader);
-  font-size: 40px;
+.skillProgress1 {
+  width: 60%;
 }
-#project-container {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding-bottom: 20px;
+.skillProgress2 {
+  width: 20%;
 }
-#projects img {
-  width: 380px;
-  height: 200px;
+#twitter,
+#linkedin,
+#github {
+  border-radius: 10px;
+}
+#twitter:hover {
+  background-color: #1c99e7;
+}
+#linkedin:hover {
+  background-color: #0a66c2;
+}
+#github:hover {
+  background-color: #24292f;
+}
+.tech-logo {
+  transition: transform 0.1s ease-in-out;
+}
+.tech-logo:hover {
+  transform: scale3D(1.15, 1.15, 0.3);
+}
+.projectTitle {
+  font-family: var(--headerText);
 }
 .project {
   border: 5px solid #0d1f4ed5;
   border-radius: 10px;
+  transition: transform 0.1s ease-in-out;
 }
-.projectTitle {
-  margin-left: 18px;
-  font-family: var(--headerText);
-  font-size: 30px;
+.project:hover {
+  transform: scale3D(1.05, 1.05, 0.3);
 }
-.projectDesc {
-  margin-left: 18px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-family: var(--introHeader);
-  font-size: 20px;
+.btns a {
+  margin-top: 6px;
+  margin-right: 19px;
 }
-.projectTech {
-  margin-left: 18px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-family: var(--introHeader);
-  font-size: 15px;
+.btns .btn {
+  padding: 7px;
 }
-.btns {
-  display: flex;
-  margin: 12px;
-}
-.live {
-  margin-left: 0px;
-}
-#about {
-  background-color: var(--dark);
-}
-#about-header {
-  color: var(--white);
-  font-family: var(--introHeader);
-  font-size: 40px;
-  text-align: center;
-}
-#about-section {
-  display: flex;
-}
-#about-img {
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-#about-section img {
-  border-radius: 50%;
-}
-#about-desc {
-  padding: 70px;
-  width: 50%;
-  color: var(--white);
-  font-size: 30px;
-  text-align: justify;
-  font-family: var(--headerText);
-}
-#about-logo {
-  margin-top: 20px;
-  display: flex;
-}
-#twitter {
-  margin-right: 20px;
-  transition: color 0.25s ease-in-out;
-}
-#twitter a:hover {
-  color: #1c99e7;
-}
-#linkedin {
-  margin-right: 20px;
-}
-#linkedin svg {
-  transition: color 0.25s ease-in-out, background-color 0.45s ease-in-out;
-}
-#linkedin svg:hover {
-  color: #0a66c2;
-  background-color: var(--white);
-  border-radius: 3px;
-}
-#github {
-  margin-right: 20px;
-  transition: color 0.25s ease-in-out, background-color 0.45s ease-in-out;
-}
-#github svg {
-  transition: color 0.25s ease-in-out;
-}
-#github svg:hover {
-  border-radius: 50%;
-  color: #24292f;
-  background-color: var(--white);
-}
-.line {
-  height: 3px;
+#hr{
+  border-top-width: 0px;
   background-color: var(--darker);
-}
-#footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--dark);
-  padding: 20px;
-  color: var(--white);
-  font-family: var(--headerText);
-}
-#footer a {
-  text-decoration: underline;
-}
-#hg {
-  display: none;
-  width: 34px;
-  padding: 4px;
-  padding-bottom: 6px;
-  border: 4px solid var(--white);
-  border-radius: 9px;
-  margin-right: 16px;
-}
-.line1 {
-  margin-top: 4px;
-  background-color: var(--white);
-}
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  #header {
-    padding: 25px;
-    font-size: 36px;
-  }
-  #header-left a {
-    font-size: 53px;
-  }
-  #intro-name {
-    font-size: 130px;
-  }
-  #intro-desc {
-    font-size: 80px;
-  }
-  .btn {
-    font-size: 45px;
-    padding: 17px;
-    border-radius: 27px;
-  }
-  #skills-header {
-    padding: 25px;
-    font-size: 60px;
-  }
-  .skill-desc-header {
-    font-size: 47px;
-  }
-  .progress-bar {
-    height: 35px;
-  }
-  .progress {
-    height: 35px;
-  }
-  #skills-col {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  #project-header {
-    padding: 25px;
-    font-size: 60px;
-  }
-  #project-container {
-    margin-left: 60px;
-    margin-right: 60px;
-    grid-gap: 60px;
-    padding-bottom: 60px;
-  }
-  #projects img {
-    width: 100%;
-    height: 450px;
-  }
-  .projectTitle {
-    font-size: 56px;
-  }
-  .projectDesc {
-    font-size: 40px;
-  }
-  .projectTech {
-    font-size: 35px;
-  }
-  #about-header {
-    padding: 25px;
-    font-size: 60px;
-  }
-  #about-desc {
-    font-size: 50px;
-  }
-  #about-img {
-    padding: 60px;
-  }
-  #about-img img {
-    width: 600px;
-    height: 500px;
-  }
-  #footer div {
-    font-size: 45px;
-  }
-  #about-logo svg {
-    transform: scale(2);
-  }
-  #twitter {
-    margin-right: 65px;
-  }
-  #linkedin {
-    margin-right: 65px;
-  }
-}
-@media only screen and (max-width: 1240px) {
-  #project-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 20px;
-  }
-  #projects img {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #about-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  #about-desc {
-    width: unset;
-  }
-}
-@media only screen and (min-width: 680px) and (max-width: 768px) {
-  #project-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 20px;
-  }
-  #projects img {
-    width: 100%;
-    height: 370px;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #project-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 20px;
-  }
-  #about-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  #about-desc {
-    padding: 25px;
-    font-size: 27px;
-    width: unset;
-  }
-  #about-img {
-    padding: 20px;
-  }
-  #about-img img {
-    width: 321px;
-    height: 260px;
-  }
-  .skill-left {
-    width: unset;
-  }
-  #skills-col {
-    flex-direction: column;
-  }
-  #intro-desc {
-    font-size: 22px;
-  }
-  #intro-name {
-    font-size: 35px;
-  }
-  #hg {
-    display: block;
-  }
-  #uls {
-    display: none;
-  }
-  #uls a {
-    font-size: 24px;
-  }
-  #uls ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #header {
-    flex-direction: column;
-  }
-  #header-left {
-    justify-content: space-between;
-  }
-  #header-left a {
-    font-size: 25px;
-  }
-  #header-right li {
-    margin: 6px 12px;
-    font-size: larger;
-  }
-}
-@media only screen and (max-width: 426px) {
-  #project-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #footerDiv {
-    flex-direction: column;
-  }
-  #footerSpan {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  #project-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (max-width: 426px) {
-  .source {
-    font-size: 17px;
-  }
-  .live {
-    font-size: 17px;
-  }
 }

@@ -3,57 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/Favicon/favicon-16x16.png" type="image/x-icon" />
     <link rel="shortcut icon" href="/Favicon/favicon-32x32.png" type="image/x-icon" />
     <link rel="shortcut icon" href="/Favicon/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/thanks.css" />
     <title>Mayank Kamra | Thanks</title>
   </head>
   <body>
-    <nav id="header" style="position: unset">
-      <div id="header-left">
+    <header
+      class="flex justify-between p-4 flex-col md:flex-row md:items-center sticky top-0"
+      id="header"
+    >
+      <div class="hmbg mx-2 text-2xl md:w-fit flex justify-between">
         <a href="/"> Mayank Kamra</a>
-        <div id="hg" onclick="hgClick()">
+        <div class="w-8 md:hidden mt-1 mx-2" id="hg" onclick="hgClick()">
           <div class="line line1"></div>
           <div class="line line1"></div>
           <div class="line line1"></div>
         </div>
       </div>
-      <div id="header-right">
-        <div id="uls">
-          <ul>
-            <li><a class="header-right-link" href="/">Home</a></li>
-            <li>
-              <a class="header-right-link" href="/index.html#skills">Skills</a>
-            </li>
-            <li>
-              <a class="header-right-link" href="/index.html#projects"
-                >Project</a
-              >
-            </li>
-            <li>
-              <a class="header-right-link" href="/index.html#about">About me</a>
-            </li>
-            <li>
-              <a class="header-right-link" href="/html/contact.html">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav id="uls" class="md:block hidden mx-2 my-3 md:my-auto">
+        <ul class="flex md:flex-row flex-col items-center">
+          <li>
+            <a class="header-right-link md:mx-2 text-2xl md:text-xl" href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#tech"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#projects"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#about"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/html/contact.html"
+              >Contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div id="thanks">
-      <div id="thanksHeader">Your Response Submitted Successfully</div>
-      <div id="thanksDesc">I'll get back to you soon</div>
-      <a href="/" class="btn">
+      <div id="thanksHeader" class="text-xl mb-3 md:text-5xl md:mb-6">Your Response Submitted Successfully</div>
+      <div id="thanksDesc" class="text-xl mb-3 md:text-5xl md:mb-6">I'll get back to you soon</div>
+      <a href="/" class="btn text-xl p-3 flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="25"
+          height="25"
           fill="currentColor"
           class="bi bi-arrow-left"
           viewBox="0 0 16 16"
@@ -61,8 +81,7 @@
           <path
             fill-rule="evenodd"
             d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-          /></svg
-        >Back to Main Page
+          /></svg>&nbsp; Back to Main Page
       </a>
     </div>
     <script src="/JavaScript/index.js"></script>

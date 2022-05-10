@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
     />
     <link rel="shortcut icon" href="/Favicon/favicon-16x16.png" type="image/x-icon" />
     <link rel="shortcut icon" href="/Favicon/favicon-32x32.png" type="image/x-icon" />
@@ -14,67 +15,86 @@
     <link rel="stylesheet" href="/CSS/contact.css" />
     <title>Mayank kamra | Contact Form</title>
   </head>
-  <body>
-    <nav id="header" style="position: unset">
-      <div id="header-left">
+  <body class="md:overflow-hidden">
+    <header
+      class="flex justify-between p-4 flex-col md:flex-row md:items-center sticky top-0"
+      id="header"
+    >
+      <div class="hmbg mx-2 text-2xl md:w-fit flex justify-between">
         <a href="/"> Mayank Kamra</a>
-        <div id="hg" onclick="hgClick()">
+        <div class="w-8 md:hidden mt-1 mx-2" id="hg" onclick="hgClick()">
           <div class="line line1"></div>
           <div class="line line1"></div>
           <div class="line line1"></div>
         </div>
       </div>
-      <div id="header-right">
-        <div id="uls">
-          <ul>
-            <li><a class="header-right-link" href="/">Home</a></li>
-            <li>
-              <a class="header-right-link" href="/index.html#skills">Skills</a>
-            </li>
-            <li>
-              <a class="header-right-link" href="/index.html#projects"
-                >Project</a
-              >
-            </li>
-            <li>
-              <a class="header-right-link" href="/index.html#about">About me</a>
-            </li>
-            <li>
-              <a class="header-right-link" href="/html/contact.html">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="contactForm">
+      <nav id="uls" class="md:block hidden mx-2 my-3 md:my-auto">
+        <ul class="flex md:flex-row flex-col items-center">
+          <li>
+            <a class="header-right-link md:mx-2 text-2xl md:text-xl" href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#tech"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#projects"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/index.html#about"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-right-link md:mx-2 text-2xl md:text-xl"
+              href="/html/contact.html"
+              >Contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="contactForm" class="pt-3">
       <div id="contactHeader">Contact Form</div>
       <form
         action="https://formsubmit.co/e62856919468275da4732e6d22df9833"
         method="post"
         autocomplete="off"
       >
-        <input type="hidden" name="_captcha" value="false" />
-        <input
+        <input class="md:w-1/2" type="hidden" name="_captcha" value="false" />
+        <input class="md:w-1/2"
           type="hidden"
           name="_next"
           value="http://mayankkamra.netlify.app/html/thanks.html"
         />
 
-        <input
+        <input class="md:w-1/2"
           required
           type="text"
           name="personName"
           id="personName"
           placeholder="Enter your Name"
         />
-        <input
+        <input class="md:w-1/2"
           required
           type="email"
           name="personEmail"
           id="personEmail"
           placeholder="Enter your Email"
         />
-        <textarea
+        <textarea class="md:w-1/2"
           required
           name="message"
           id="Message"
@@ -82,7 +102,7 @@
           rows="5"
           placeholder="Type your Message"
         ></textarea>
-        <button class="btn" type="submit">Submit</button>
+        <button class="btn py-3 px-5 text-xl" type="submit">Submit</button>
       </form>
     </div>
     <script src="/JavaScript/index.js"></script>
