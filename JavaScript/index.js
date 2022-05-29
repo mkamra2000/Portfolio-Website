@@ -19,3 +19,8 @@ function hgClick() {
     document.getElementById("uls").style.display = "none";
   }
 }
+
+function load(){
+  let loader = document.getElementById("loading");
+  loader.style.display = 'none';
+}

@@ -40,6 +40,13 @@ header {
   color: var(--white);
   font-family: var(--headerText);
 }
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #06011f url("../Images/Loader.gif") no-repeat center;
+  z-index: 99999;
+}
 .line {
   height: 3px;
   background-color: var(--darker);
