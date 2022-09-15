@@ -39,6 +39,7 @@ header {
   background-color: var(--dark);
   color: var(--white);
   font-family: var(--headerText);
+  z-index: 89;
 }
 #loading{
   position: fixed;
@@ -113,11 +114,27 @@ header {
   background-color: var(--light);
   margin: -2px;
 }
+@keyframes progress1 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 60%;
+  }
+}
+@keyframes progress2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 20%;
+  }
+}
 .skillProgress1 {
-  width: 60%;
+  max-width: 60%;
 }
 .skillProgress2 {
-  width: 20%;
+  max-width: 20%;
 }
 #twitter,
 #linkedin,
@@ -157,7 +174,7 @@ header {
 .btns .btn {
   padding: 7px;
 }
-#hr{
+#hr {
   border-top-width: 0px;
   background-color: var(--darker);
 }

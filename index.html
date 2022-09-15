@@ -24,7 +24,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/CSS/style.css" />
-    <script src="/JavaScript/index.js"></script>
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mayank Kamra</title>
   </head>
   <body onload="load()">
@@ -84,7 +85,7 @@
       id="intro"
       class="h-screen flex flex-col justify-center items-center"
     >
-      <div id="intro-text">
+      <div id="intro-text" data-aos="zoom-in">
         <h1 id="intro-name" class="text-center text-5xl md:text-7xl">
           MAYANK KAMRA
         </h1>
@@ -92,7 +93,7 @@
           Self-Taught Software Developer
         </div>
       </div>
-      <div id="btn-grp" class="my-5 text-center text-xl">
+      <div id="btn-grp" class="my-5 text-center text-xl" data-aos="zoom-in">
         <a
           href="https://drive.google.com/file/d/1nNzZI1Dsg_pw7Gi7SXrGuRwns2kVS2ib/view?usp=sharing"
           class="btn p-2 mx-2"
@@ -109,6 +110,7 @@
         <div
           id="about-section"
           class="md:w-1/2 flex flex-col items-center md:pr-4"
+          data-aos="fade"
         >
           <div id="about-img">
             <img
@@ -182,15 +184,15 @@
             </div>
           </div>
         </div>
-        <div id="skills" class="md:w-5/12 flex justify-center flex-col md:m-14">
+        <div id="skills" class="md:w-5/12 flex justify-center flex-col md:m-14" data-aos="fade">
           <h2 class="skillsHeader text-2xl">My Skills</h2>
           <h3 class="skillHeader text-xl mt-3">Web Development</h3>
           <div class="skillLine w-11/12 h-3 border-2 rounded-xl">
-            <div class="skillProgress1 h-3 border-2 rounded-xl"></div>
+            <div class="skillProgress1 h-3 border-2 rounded-xl" id="progress1"></div>
           </div>
           <h3 class="skillHeader text-xl my-3">Android Development</h3>
           <div class="skillLine w-11/12 h-3 border-2 rounded-xl">
-            <div class="skillProgress2 h-3 border-2 rounded-xl"></div>
+            <div class="skillProgress2 h-3 border-2 rounded-xl" id="progress2"></div>
           </div>
         </div>
       </div>
@@ -201,54 +203,54 @@
       </h2>
       <div class="technology grid gap-8 md:grid-cols-5 grid-cols-3">
         <div class="m-auto tech-logo">
-          <a title="C++"><img src="/Images/c.svg" alt="CPP" width="80" /></a>
+          <a title="C++"><img src="/Images/c.svg" alt="CPP" width="80"data-aos="fade" /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="Java"
-            ><img src="/Images/java.svg" alt="Java" width="80"
+            ><img src="/Images/java.svg" alt="Java" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="Python"
-            ><img src="/Images/python-5.svg" alt="Python" width="80"
+            ><img src="/Images/python-5.svg" alt="Python" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="HTML"
-            ><img src="/Images/html-1.svg" alt="HTML" width="80"
+            ><img src="/Images/html-1.svg" alt="HTML" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="CSS"
-            ><img src="/Images/css-3.svg" alt="CSS" width="80"
+            ><img src="/Images/css-3.svg" alt="CSS" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="JavaScript"
-            ><img src="/Images/logo-javascript.svg" alt="JavaScript" width="80"
+            ><img src="/Images/logo-javascript.svg" alt="JavaScript" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="React-JS">
-            <img src="/Images/react-2.svg" alt="React-JS" width="80"
+            <img src="/Images/react-2.svg" alt="React-JS" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="Node-JS"
-            ><img src="/Images/nodejs-1.svg" alt="Node-JS" width="80"
+            ><img src="/Images/nodejs-1.svg" alt="Node-JS" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
-          <a title="Git"><img src="/Images/git.svg" alt="Git" width="80" /></a>
+          <a title="Git"><img src="/Images/git.svg" alt="Git" width="80" data-aos="fade"/></a>
         </div>
         <div class="m-auto tech-logo">
           <a title="Bootstrap"
-            ><img src="/Images/bootstrap.svg" alt="Bootstrap" width="80"
+            ><img src="/Images/bootstrap.svg" alt="Bootstrap" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo" style="filter: brightness(2)">
           <a title="Django"
-            ><img src="/Images/django-community.svg" alt="Django" width="80"
+            ><img src="/Images/django-community.svg" alt="Django" width="80" data-aos="fade"
           /></a>
         </div>
         <div class="m-auto tech-logo">
@@ -256,7 +258,7 @@
             ><img
               src="/Images/tailwind-css-2.svg"
               alt="Tailwind-CSS"
-              width="80"
+              width="80" data-aos="fade"
           /></a>
         </div>
       </div>
@@ -268,8 +270,8 @@
         class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8"
       >
         <div class="project">
-          <img src="/Images/Portfolio.webp" alt="Portfolio Website" />
-          <div class="projectSub p-5">
+          <img src="/Images/Portfolio.webp" alt="Portfolio Website" data-aos="fade"/>
+          <div class="projectSub p-5" data-aos="fade">
             <h2 class="projectTitle text-2xl">Portfolio Website</h2>
             <div class="projectDesc py-2">
               Personal Portfolio Website(Mayank Kamra)
@@ -291,8 +293,8 @@
           </div>
         </div>
         <div class="project">
-          <img src="/Images/Quiz-App_1.webp" alt="Quiz App" />
-          <div class="projectSub p-5">
+          <img src="/Images/Quiz-App_1.webp" alt="Quiz App" data-aos="fade"/>
+          <div class="projectSub p-5" data-aos="fade">
             <h2 class="projectTitle text-2xl">Quiz App</h2>
             <div class="projectDesc py-2">
               This is quiz site for practising questions.
@@ -317,8 +319,8 @@
           </div>
         </div>
         <div class="project">
-          <img src="/Images/Tic-Tac-Toe_1.webp" alt="Tic Tac Toe" />
-          <div class="projectSub p-5">
+          <img src="/Images/Tic-Tac-Toe_1.webp" alt="Tic Tac Toe" data-aos="fade"/>
+          <div class="projectSub p-5" data-aos="fade">
             <h2 class="projectTitle text-2xl">Tic Tac Toe</h2>
             <div class="projectDesc py-2">This is tic-tac-toe game.</div>
             <div class="projectTech">
@@ -343,8 +345,8 @@
           </div>
         </div>
         <div class="project">
-          <img src="/Images/News-App.webp" alt="News App" />
-          <div class="projectSub p-5">
+          <img src="/Images/News-App.webp" alt="News App" data-aos="fade"/>
+          <div class="projectSub p-5" data-aos="fade">
             <h2 class="projectTitle text-2xl">Newzly App</h2>
             <div class="projectDesc py-2">
               This is an android app that shows latest news.
@@ -392,5 +394,14 @@
         <div>All Rights Reserved</div>
       </div>
     </footer>
+    <script src="/JavaScript/index.js"></script>
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1400,
+        once: true
+      });
+    </script>
   </body>
 </html>
