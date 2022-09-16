@@ -10,7 +10,6 @@
   text-align: center;
   color: var(--white);
   font-family: var(--headerText);
-  font-size: 40px;
 }
 textarea {
   resize: none;

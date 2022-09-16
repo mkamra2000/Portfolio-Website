@@ -1,4 +1,7 @@
-let interval = setInterval(checkViewport,400);
+let interval;
+if(location.href=='http://127.0.0.1:5500/'){
+  interval = setInterval(checkViewport,400);
+}
 function hgClick() {
   if (document.getElementById("uls").style.display === "none") {
     document.getElementById("uls").style.display = "block";
