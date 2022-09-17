@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/Favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/contact.css" />
-    <title>Mayank kamra | Contact Form</title>
+    <title>Mayank Kamra | Contact Form</title>
   </head>
   <body class="fixed inset-0" onload="load()">
     <div id="loading"></div>
@@ -86,6 +86,7 @@
           type="text"
           name="personName"
           id="personName"
+          onchange="inputValidate()"
           placeholder="Enter your Name"
         />
         <input class="md:w-1/2"
@@ -101,6 +102,7 @@
           id="Message"
           cols="20"
           rows="5"
+          onchange="inputValidate()"
           placeholder="Type your Message"
         ></textarea>
         <button class="btn py-3 px-5 text-xl" type="submit">Submit</button>

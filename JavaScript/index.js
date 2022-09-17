@@ -55,3 +55,9 @@ function checkViewport() {
     clearInterval(interval);
   }
 }
+function inputValidate(){
+  let personName = document.getElementById("personName");
+  personName.value = personName.value.trim();
+  let msg = document.getElementById("Message");
+  msg.value = msg.value.trim();
+}
