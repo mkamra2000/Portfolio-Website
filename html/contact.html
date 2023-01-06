@@ -70,17 +70,15 @@
     <div id="contactForm" class="pt-3">
       <div id="contactHeader" class="text-3xl md:text-4xl">Contact Form</div>
       <form
-        action="https://formsubmit.co/b8e761b8cf0dab6b34e93766fe63ab35 "
+        name="contact"
         method="post"
         autocomplete="off"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit="submit"
+        action="/html/thanks.html"
       >
-        <input class="md:w-1/2" type="hidden" name="_captcha" value="false" />
-        <input class="md:w-1/2"
-          type="hidden"
-          name="_next"
-          value="http://mayankkamra.netlify.app/html/thanks.html"
-        />
-
+        <input class="md:w-1/2" type="hidden" name="bot-field"/>
         <input class="md:w-1/2"
           required
           type="text"
