@@ -2,6 +2,9 @@ let interval;
 if(location.href=='https://mayankkamra.netlify.app/'){
   interval = setInterval(checkViewport,400);
 }
+if(window.innerWidth<=767){
+  document.getElementById("uls").style.display = "none";
+}
 function hgClick() {
   if (document.getElementById("uls").style.display === "none") {
     document.getElementById("uls").style.display = "block";
